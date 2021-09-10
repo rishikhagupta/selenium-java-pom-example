@@ -45,33 +45,24 @@
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
                 <version>5.4.0</version>
-                <!--executions>
-                    <execution>
-                        <id>execution</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <configuration>
-                            <projectName>cucumber-jvm-example</projectName>
-                            <skip>false</skip>
-                            <outputDirectory>${project.build.directory}</outputDirectory>
-                            <inputDirectory>${project.build.directory}/jsonReports</inputDirectory>
-                            <jsonFiles>
-                                <param>**/*.json</param>
-                            </jsonFiles>
-                            <classificationDirectory>${project.build.directory}/classifications</classificationDirectory>
-                            <classificationFiles>
-                                    <param>sample.properties</param>
-                                    <param>other.properties</param>
-                            </classificationFiles>
-                            <parallelTesting>false</parallelTesting>
-                            <mergeFeaturesById>false</mergeFeaturesById>
-                            <mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>
-                            <checkBuildResult>false</checkBuildResult>
-                        </configuration>
-                    </execution>
-                </executions-->
+<executions>
+        <execution>
+            <id>execution</id>
+            <phase>verify</phase>
+            <goals>
+                <goal>generate</goal>
+            </goals>
+            <configuration>
+                <projectName>Sample-Cucumber-TestNG</projectName>
+                <skip>false</skip>
+                <outputDirectory>reports/html-reports</outputDirectory>
+                <inputDirectory>target/cucumber-reports</inputDirectory>
+                <jsonFiles>
+                    <param>**/*.json</param>
+                </jsonFiles>
+            </configuration>
+        </execution>
+    </executions>
             </plugin>
 
             </plugins>
