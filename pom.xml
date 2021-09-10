@@ -82,14 +82,15 @@
                     </execution>
                 </executions>
             </plugin>
+
+            </plugins>
+        </pluginManagement>
+             
+         <plugins>
                   <plugin>
                            <groupId>net.masterthought</groupId>
                            <artifactId>maven-cucumber-reporting</artifactId>
                   </plugin>
-            </plugins>
-        </pluginManagement>
-             
-         <plugins>             
          </plugins>
     </build>
     <dependencies>
